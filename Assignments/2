@@ -1,0 +1,32 @@
+Q1) SLN File: A solution file (.sln) is used by Visual Studio to organize multiple projects and their settings in one place. It manages the overall structure of a development solution. It's a Plain text file. It can holds multiple projects and each projects represents different aspects of the application. It is used to managing our project configurations and dependencies.
+
+Q2) CS Project File: A C# project file (.csproj) is an XML-based file containing configuration details for a C# project, like references, build settings, and dependencies. Automatically created when a C# project created. We can manually edit the file.
+
+Difference :  CS project file is XML based and contains the code. In SLN file it is plain text file which contains details of the C# project. 
+		1 - .sln manages structure and configurations in multiple projects in a solution. /.cs file manages individual project settings. 
+		2 - .sln file used for solution management and interproject setup. /.cs used for project build and references.
+
+
+Q3) Bin and Obj Folders:
+
+Bin: Contains the compiled output (like .exe or .dll files) ready for execution. 
+Obj: Stores intermediate files generated during the build process, such as object files, before final output is placed in the bin folder. 
+
+Intermediate Files: The obj folder holds files generated during the build process, such as object files (.obj) that are created from compiling individual source code files (.cs). These object files are not executable and cannot be run on their own.
+
+Linking Process: The final output, such as an executable (.exe) or a dynamic link library (.dll), is created after the linking process, which combines the object files from the obj folder along with other resources into a single executable file. This final output is typically found in the bin folder.
+
+Q4) Release and Debug in bin folder:
+
+Debug: It is used during development phase. It helps in identifying, fixing and tracking the code executions. If the project is in the debug mode the compiler generates .pdb files.
+
+Release: It used during deployment phase. It focuses on performance and optimization. The compiler applies various optimizations to ensure the application runs efficiently. Contains the compiled output files when the project is built in Release mode. This mode is optimized for performance, with no debugging information, making it ideal for final production deployment.
+
+Q5) A PDB file (Program Database) is used in conjunction with an executable (.exe) or dynamic link library (.dll) file to store debugging information. It contains mappings between the executable code and the original source code, including variable names, function locations, and line numbers.
+
+The key uses of a PDB file are:
+
+Debugging: It helps developers trace back errors or crashes in the compiled program to the exact lines in the source code.
+Breakpoints: It allows setting breakpoints in a debugger for specific code lines.
+
+Q6) exe file: An executable file (.exe) is a file that contains a program that is ready to be run on a computer. It's the compiled version of your application that the operating system can execute directly.
