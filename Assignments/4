@@ -1,0 +1,29 @@
+Questions:
+1) Types of Relationships in SQL 2) Foreign key concept
+
+Types of Relationships in SQL: 
+SQL databases support three main types of relationships between tables:
+1. One-to-One Relationship
+Definition: A one-to-one relationship exists when a single row in one table corresponds to exactly one row in another table.
+Example: A Person table and a Passport table, where each person has only one passport and each passport belongs to only one person.
+2. One-to-Many Relationship
+Definition: A one-to-many relationship exists when a single row in one table can correspond to multiple rows in another table.
+Example: A Department table and an Employee table, where one department can have many employees, but each employee belongs to only one department.
+3. Many-to-Many Relationship
+Definition: A many-to-many relationship exists when multiple rows in one table can correspond to multiple rows in another table.
+Example: A Course table and a Student table, where many students can enroll in a course, and a student can enroll in multiple courses.
+Foreign Key Concept
+A foreign key is a column in one table that references the primary key of another table. It establishes a link between the two tables, defining a relationship between them.
+
+Key Points about Foreign Keys:
+A foreign key must reference a column in another table that is a primary key or a unique constraint.
+The data types of the foreign key and the referenced column must be compatible.
+Foreign keys help maintain data integrity by ensuring that data in related tables is consistent.
+You can enforce referential integrity using foreign keys to prevent invalid data from being inserted or updated.
+Example:
+SQL
+CREATE TABLE Orders (
+    order_id INT PRIMARY KEY,
+    customer_id INT FOREIGN KEY REFERENCES Customers(customer_id)
+);
+In this example, the customer_id column in the Orders table is a foreign key that references the customer_id column in the Customers table. 
