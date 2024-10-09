@@ -1,0 +1,46 @@
+## Normalization in SQL
+
+Normalization is the process of organizing data in a database to minimize redundancy and dependency. It helps to improve data integrity, reduce data redundancy, and make the database more efficient and maintainable.
+
+**Why Normalize?**
+
+* **Reduce Data Redundancy:** Avoids storing the same data multiple times, reducing storage requirements and the risk of inconsistencies.
+* **Improve Data Integrity:** Ensures that data is consistent and accurate by enforcing relationships between tables.
+* **Enhance Database Performance:** Normalized databases can often perform better due to reduced data redundancy and improved query efficiency.
+* **Facilitate Database Maintenance:** Makes it easier to modify and update the database schema without affecting existing data.
+
+**Normalization Forms:**
+
+There are several normalization forms, each with its own set of rules:
+
+1. **First Normal Form (1NF):**
+   - Each column in a table should contain atomic values (indivisible values).
+   - No repeating groups within a row.
+
+2. **Second Normal Form (2NF):**
+   - The table must be in 1NF.
+   - All non-key attributes must be fully dependent on the primary key.
+
+3. **Third Normal Form (3NF):**
+   - The table must be in 2NF.
+   - No non-key attribute should be transitively dependent on the primary key.
+
+4. **Boyce-Codd Normal Form (BCNF):**
+   - The table must be in 3NF.
+   - Every determinant must be a superkey.
+
+**Anomalies:**
+
+Anomalies are inconsistencies or errors that can occur in a database due to poorly normalized data. Common types of anomalies include:
+
+* **Update Anomalies:** When updating a value in one row requires updating multiple rows to maintain consistency.
+* **Insert Anomalies:** When you cannot insert a new row into a table without also inserting data into related tables.
+* **Delete Anomalies:** When deleting a row accidentally deletes related data in other tables.
+
+**Example:**
+
+Consider a table named `Orders` with columns `order_id`, `customer_id`, `product_id`, and `quantity`. If this table is not normalized, it might suffer from update anomalies (changing a customer's name would require updating multiple orders) and delete anomalies (deleting a customer might accidentally delete all related orders).
+
+To normalize this table, we could create two separate tables: `Customers` with columns `customer_id` and `customer_name`, and `Orders` with columns `order_id`, `customer_id`, and `product_id`. This would eliminate the redundancy and potential anomalies.
+
+By understanding normalization and its principles, you can design databases that are more efficient, maintainable, and free from data anomalies.

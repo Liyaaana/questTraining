@@ -1,0 +1,43 @@
+Questions:
+1)Impotant things related to database including relational and non relational  2) listout top databses and which  companies like facebook twitteer are used by them  3) open source database example
+
+Important Things Related to Databases (Relational and Non-Relational): Databases play a crucial role in storing, organizing, and retrieving information. There are two main types of databases: relational (SQL) and non-relational (NoSQL). Let’s explore the key differences between them:
+Relational Databases (SQL):
+Organize data into tables with rows (records) and columns (attributes).
+Use primary keys to uniquely identify records and foreign keys to establish relationships between tables.
+Ideal for structured data with strict schemas and complex queries.
+Examples: MySQL, Oracle, and PostgreSQL12.
+Widely used in various applications, from small-scale systems to large enterprises.
+Non-Relational Databases (NoSQL):
+Handle unstructured or semi-structured data.
+Do not rely on fixed schemas, allowing flexibility in data storage.
+Types include:
+Document-oriented databases (e.g., MongoDB): Store data in documents (like JSON) and are great for handling diverse data types.
+Graph databases (e.g., Neo4j): Optimal for managing complex relationships.
+Key-value stores (e.g., Redis): Efficient for simple data retrieval.
+Column-family stores (e.g., Apache Cassandra): Handle large-scale, distributed data.
+Time-series databases (e.g., TimescaleDB): Designed for time-series data13.
+
+Top Databases and Companies Using Them:
+MySQL - Used by Facebook, Twitter, YouTube, Airbnb.
+PostgreSQL - Used by Apple, Instagram, Spotify, Reddit.
+Microsoft SQL Server - Used by Microsoft, Stack Overflow, Dell.
+Oracle Database - Used by JPMorgan Chase, eBay, LinkedIn.
+MongoDB - Used by Adobe, eBay, LinkedIn, Uber.
+Cassandra - Used by Netflix, Spotify, Instagram.
+Redis - Used by Twitter, GitHub, Pinterest.
+Elasticsearch - Used by Uber, eBay, Slack.
+MariaDB - Used by Google, Wikipedia, Samsung.
+Firebase - Used by Alibaba, Trivago, Venmo.
+
+Open Source Database Examples:
+MySQL: A robust open-source relational database system.
+MariaDB: A fork of MySQL with enhancements.
+PostgreSQL: An extensible object-relational database.
+MongoDB: A document-oriented NoSQL database.
+Apache CouchDB: A RESTful NoSQL database.
+Redis: An in-memory key-value store.
+SQLite: A serverless embedded database.
+Firebird: A lightweight relational database.
+CUBRID: A flexible relational database.
+CockroachDB: A distributed SQL database
