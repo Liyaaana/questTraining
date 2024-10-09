@@ -1,0 +1,6 @@
+﻿CREATE TABLE products(
+	id BIGINT PRIMARY KEY IDENTITY,
+	quantity INT NOT NULL DEFAULT 1,
+	product_id BIGINT NOT NULL,
+	user_id BIGINT NOT NULL
+)
