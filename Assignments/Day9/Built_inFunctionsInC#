@@ -1,0 +1,102 @@
+## Built-in Functions in C#
+
+**String Functions:**
+
+* **`Length`:** Returns the length of the string.
+  string str = "Hello, world!";
+  int length = str.Length; // length will be 13
+ 
+* **`Substring`:** Extracts a substring from a string.
+  string str = "Hello, world!";
+  string substring = str.Substring(0, 5); // substring will be "Hello"
+
+* **`IndexOf`:** Finds the index of the first occurrence of a character or substring.
+  
+  string str = "Hello, world!";
+  int index = str.IndexOf("world"); // index will be 7
+
+* **`Replace`:** Replaces all occurrences of a substring with another string.
+  
+  string str = "Hello, world!";
+  string newStr = str.Replace("world", "there"); // newStr will be "Hello, there!"
+
+* **`ToUpper` and `ToLower`:** Converts a string to uppercase or lowercase.
+
+  string str = "Hello, world!";
+  string uppercaseStr = str.ToUpper(); // uppercaseStr will be "HELLO, WORLD!"
+  string lowercaseStr = str.ToLower(); // lowercaseStr will be "hello, world!"
+ 
+* **`Trim`:** Removes leading and trailing whitespace from a string.
+  
+  string str = "  Hello, world!  ";
+  string trimmedStr = str.Trim(); // trimmedStr will be "Hello, world!"
+ 
+
+**Array Functions:**
+
+* **`Length`:** Returns the length of the array (number of elements).
+  
+  int[] arr = { 1, 2, 3, 4, 5 };
+  int length = arr.Length; // length will be 5
+
+* **`IndexOf`:** Finds the index of the first occurrence of a value in the array.
+
+  int[] arr = { 1, 2, 3, 4, 5 };
+  int index = Array.IndexOf(arr, 3); // index will be 2
+ 
+* **`Reverse`:** Reverses the order of elements in the array.
+ 
+  int[] arr = { 1, 2, 3, 4, 5 };
+  Array.Reverse(arr); // arr will be { 5, 4, 3, 2, 1 }
+  
+* **`Sort`:** Sorts the elements of the array in ascending or descending order.
+  
+  int[] arr = { 3, 1, 4, 2, 5 };
+  Array.Sort(arr); // arr will be { 1, 2, 3, 4, 5 }
+ 
+
+**List Functions:**
+
+* **`Add`:** Adds an element to the end of the list.
+
+  List<int> list = new List<int>();
+  list.Add(1);
+  list.Add(2);
+
+* **`Remove`:** Removes an element from the list.
+  
+  List<int> list = new List<int> { 1, 2, 3 };
+  list.Remove(2);
+ 
+* **`RemoveAt`:** Removes an element at a specific index.
+ 
+  List<int> list = new List<int> { 1, 2, 3 };
+  list.RemoveAt(1);
+
+* **`Clear`:** Removes all elements from the list.
+ 
+  List<int> list = new List<int> { 1, 2, 3 };
+  list.Clear();
+ 
+
+**Dictionary Functions:**
+
+* **`ContainsKey`:** Checks if a key exists in the dictionary.
+  
+  Dictionary<string, int> dict = new Dictionary<string, int>();
+  dict["apple"] = 5;
+  bool containsKey = dict.ContainsKey("apple"); // containsKey will be true
+ 
+* **`TryGetValue`:** Tries to retrieve the value associated with a key.
+ 
+  Dictionary<string, int> dict = new Dictionary<string, int>();
+  dict["apple"] = 5;
+  int value;
+  bool success = dict.TryGetValue("apple", out value); // success will be true, value will be 5
+
+* **`Remove`:** Removes a key-value pair from the dictionary.
+  
+  Dictionary<string, int> dict = new Dictionary<string, int>();
+  dict["apple"] = 5;
+  dict.Remove("apple");
+  
