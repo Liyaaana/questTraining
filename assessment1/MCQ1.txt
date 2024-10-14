@@ -1,13 +1,9 @@
 Question 1 of 20
 What does the params keyword allow in C#?
-A.
-Pass a fixed number of arguments
-B.
-Pass a variable number of arguments (correct)
-C.
-Prevent passing any arguments
-D.
-Specify default arguments
+A.Pass a fixed number of arguments
+B.Pass a variable number of arguments (correct)
+C.Prevent passing any arguments
+D.Specify default arguments
 
 Which of the following data types cannot store a null value?
 A.int (correct)
