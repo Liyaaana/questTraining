@@ -1,0 +1,125 @@
+Question 1 of 20
+What does the params keyword allow in C#?
+A.
+Pass a fixed number of arguments
+B.
+Pass a variable number of arguments (correct)
+C.
+Prevent passing any arguments
+D.
+Specify default arguments
+
+Which of the following data types cannot store a null value?
+A.int (correct)
+B.string
+C.object
+D.int?
+
+Which of the following is a correct declaration of a method with default parameters?
+A.void MyMethod(int x = 10)  (correct)
+B.void MyMethod(int x, int y)
+C.void MyMethod(default int x)
+D.void MyMethod(int x: 10)
+
+Which of the following keywords is used to handle exceptions in C#?
+A.handle
+B.exception
+C.try  (correct)
+D.check
+
+Which method is used to add elements to a List in C#?
+A.Insert()
+B.Add()  (correct)
+C.Append()
+D.Push()
+
+Which of these keywords is used to make a variable nullable?
+A.? (correct)
+B.!
+C.@
+D.#
+
+Which of the following collection types maintains key-value pairs in C#?
+A.List
+B.Array
+C.Dictionary (correct)
+D.Queue
+
+Which of the following is a reference type in C#?
+A.int
+B.float
+C.object (correct)
+D.bool
+
+Which of the following is NOT a value type in C#?
+A.int
+B.bool
+C.struct
+D.class  (correct)
+
+
+Which method in C# is used to split a string into an array?
+A.Split()  (correct)
+B.Divide()
+C.Separate()
+D.Parse()
+
+Which keyword is used to pass arguments by reference in C#?
+A.out
+B.ref  (correct)
+C.in
+D.pass
+
+Which of the following allows dynamic resizing in C#?
+A.Array
+B.List (correct)
+C.Tuple
+D.Struct
+
+Which of the following is a value type in C#?
+A.String (correct)
+B.Array
+C.Int 
+D.Object
+
+What will be the output of the following code? int? a = null; Console.WriteLine(a ?? 0);
+A.null
+B.0  (correct)
+C.Compile-time error
+D.Runtime error
+
+What is the size of an int in C#?
+A.4 bytes (correct)
+B.8 bytes
+C.2 bytes
+D.16 bytes
+
+Which of the following allows duplicate keys in C#?
+A.List
+B.Dictionary  
+C.Array
+D.None of the above (correct)
+
+Which of the following is a correct way to initialize a dictionary in C#?
+A. Dictionary<int, string> dict = new Dictionary<int, string>(); (correct)
+B. dict = new Dictionary<>();
+C. Dictionary<int, string> dict = new Dictionary<>();
+D. dict = new Dictionary<int, string>();
+
+Which of the following is immutable in C#?
+A.Array
+B.String (correct)
+C.List
+D.Dictionary 
+
+What is the default accessibility of class members in C#?
+A.public
+B.private (correct)
+C.protected
+D.internal
+
+What is the default value of a nullable integer (int?) in C#?
+A.0
+B.null (correct)
+C.1
+D.undefined
