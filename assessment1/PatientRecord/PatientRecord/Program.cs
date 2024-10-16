@@ -1,4 +1,26 @@
-﻿using System;
+﻿/*
+Patient Record System
+Scenario:
+Create a Patient Record System in C# that manages patient details, updates, and searches.
+ 
+Requirements:
+Implement functionality to manage:
+Patient Details: Store the basic information for each patient, including Name, Age, Diagnosis, and Admission Status (whether the patient is admitted or discharged).
+Search and Update: Search for a patient by name and display their details. Allow updating the patient’s diagnosis and admission status.
+
+Functionality:
+Add new patient records, including their details(Name, Age, Diagnosis, and Admission Status).
+Search for a patient by name and display their details (if found).
+Update a patient’s diagnosis or admission status (e.g., mark them as discharged).
+List all patients currently admitted to the system.
+
+Operations:
+Adding and storing patient records.
+Searching for and updating patient details.
+Displaying patient information based on the search or specific criteria (e.g., all admitted patients).
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
