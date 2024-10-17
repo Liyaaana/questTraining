@@ -4,13 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppSettingsstatic
+namespace EmployeeManagement.Entities.Types
 {
-
-    internal class Program
+    public enum EmploymentType
     {
-        static void Main(string[] args)
-        {
-        }
+        FullTime,
+        Contract
     }
 }

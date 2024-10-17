@@ -5,7 +5,7 @@ VisualStudioVersion = 17.12.35323.107
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonConstructor", "PersonConstructor\PersonConstructor.csproj", "{82309B4F-692F-4434-9F00-45087F54C300}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSettingsstatic", "..\Personstatic\AppSettingsstatic.csproj", "{3D75CD33-67AA-41C2-BEED-65F0B0BD480D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employeestatic", "..\Personstatic\Employeestatic.csproj", "{3D75CD33-67AA-41C2-BEED-65F0B0BD480D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

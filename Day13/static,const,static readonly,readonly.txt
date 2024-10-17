@@ -1,0 +1,27 @@
+STATIC:
+
+- Created only once in the memory.
+- Accessed in the name of the class. (AppSettings. Version)
+- Cannot be accessed through objects. (obj.Version) // Not possible
+- Value can be modified.
+
+CONST:
+
+- Created only once in the memory.
+- Accessed in the name of the class. (AppSettings. Version)
+- Cannot be accessed through objects. (obj.Version) // Not possible
+- Value cannot be modified.
+
+STATIC READONLY:
+
+- Created only once in the memory.
+- Accessed in the name of the class. (AppSettings. Version)
+- Cannot be accessed through objects. (obj.Version) // Not possible
+- Value can be modified only from a static constructor.
+
+READONLY:
+
+- Created for each objects.
+- Accessed in the name of the object. (obj.Version)
+- Cannot be accessed through Class Name. (AppSettings. Version) // Not possible 
+- Value can be modified only from a constructor.
