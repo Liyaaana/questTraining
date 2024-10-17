@@ -44,10 +44,11 @@ namespace CreditCard3
             }
         }
 
-        static void AddCreditCard(Credit user)
+        static void AddCreditCard(Credit user)   
         {
+            // AddCreditCard method prompts the user to input credit card details, then calls the AddCreditCard method of the Credit class.
             Console.WriteLine("Enter the card number:");
-            int cardNuber = int.Parse(Console.ReadLine());
+            int cardNumber = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Enter the expiry month in MM");
             int expiryMonth = int.Parse(Console.ReadLine());
@@ -58,7 +59,7 @@ namespace CreditCard3
             Console.WriteLine("Enter the CVC");
             int cvc = int.Parse(Console.ReadLine());
 
-            user.AddCreditCard(cardNuber, expiryMonth, expiryYear, cvc);
+            user.AddCreditCard(cardNumber, expiryMonth, expiryYear, cvc);
         }
 
         static void SearchCreditCard(Credit user)
