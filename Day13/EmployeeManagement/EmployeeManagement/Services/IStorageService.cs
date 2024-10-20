@@ -7,6 +7,7 @@ using EmployeeManagement.Entities;
 
 namespace EmployeeManagement.Services
 {
+    // IStorageService used to store data.
     internal interface IStorageService
     {
         void Save(Employee employee);
