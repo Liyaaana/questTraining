@@ -14,20 +14,20 @@ namespace PatientDoctorManagementSystem
         Other
     }
 
-    public abstract class Entity
+    public abstract class Datails
     {
         public int Id { get; set; }
         public string Name { get; set; }
     }
 
-    public class Patient : Entity
+    public class Patient : Datails
     {
         public int Age { get; set; }
         public Gender Gender { get; set; }
         public string MedicalCondition { get; set; }
     }
 
-    public class Doctor : Entity
+    public class Doctor : Datails
     {
         public string Specialization { get; set; }
         public int? PatientId { get; set; }
