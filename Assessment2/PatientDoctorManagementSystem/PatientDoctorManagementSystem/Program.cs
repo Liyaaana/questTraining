@@ -135,6 +135,41 @@ namespace PatientDoctorManagementSystem
             return doctors;
         }
 
+        public void UpdatePatient(Patient patient)
+        {
+            using (SqlConnection conn = _dbConnection.GetConnection())
+            {
+                conn.Open();
+                string query = "UPDATE Patient SET Name = @Name, Age = @Age, Gender = @Gender, MedicalCondition = @MedicalCondition WHERE Id = @Id";
+                using (SqlCommand command = new SqlCommand(query, conn))
+                {
+                    command.Parameters.AddWithValue("@Id", patient.Id);
+                    command.Parameters.AddWithValue("@Name", patient.Name);
+                    command.Parameters.AddWithValue("@Age", patient.Age);
+                    command.Parameters.AddWithValue("@Gender", patient.Gender.ToString());
+                    command.Parameters.AddWithValue("@MedicalCondition", patient.MedicalCondition);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void UpdateDoctor(Doctor doctor)
+        {
+            using (SqlConnection conn = _dbConnection.GetConnection())
+            {
+                conn.Open();
+                string query = "UPDATE Doctor SET Name = @Name, Specialization = @Specialization, PatientId = @PatientId WHERE Id = @Id";
+                using (SqlCommand command = new SqlCommand(query, conn))
+                {
+                    command.Parameters.AddWithValue("@Id", doctor.Id);
+                    command.Parameters.AddWithValue("@Name", doctor.Name);
+                    command.Parameters.AddWithValue("@Specialization", doctor.Specialization);
+                    command.Parameters.AddWithValue("@PatientId", doctor.PatientId.HasValue ? (object)doctor.PatientId.Value : DBNull.Value);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
         public void DeletePatient(int id)
         {
             string patientName = GetPatientNameById(id);
@@ -234,10 +269,18 @@ namespace PatientDoctorManagementSystem
                 Console.WriteLine($"Doctor: {doctor.Name}, Specialization: {doctor.Specialization}, PatientId: {patientInfo}");
             }
 
+            var patientToUpdate = patients.First();
+            patientToUpdate.MedicalCondition = "Recovered";
+            repository.UpdatePatient(patientToUpdate);
+
+            var doctorToUpdate = doctors.First();
+            doctorToUpdate.Specialization = "Neurologist"; 
+            repository.UpdateDoctor(doctorToUpdate);
+
+
             repository.DeletePatient(patients[0].Id);
             repository.DeleteDoctor(doctors[0].Id);
 
-            Console.ReadLine();
         }
     }
 }
