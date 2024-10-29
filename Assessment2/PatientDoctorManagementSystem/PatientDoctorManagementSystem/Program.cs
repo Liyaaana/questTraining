@@ -4,6 +4,41 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+/*
+Using Db connection in C# give simple code including abstract ,interface , Enum to the below question                         
+Patient and Doctor Management System Using MSSQL
+Task:
+Create a C# console application that interacts with an MSSQL database to manage records of patients and doctors. Focus on basic CRUD operations for two separate tables: Patient and Doctor.
+1. Database Schema
+Patient Table
+Fields:
+Id (INT, Primary Key) – Unique identifier of the patient.
+Name (NVARCHAR(100)) – Name of the patient.
+Age (INT) – Age of the patient.
+Gender (NVARCHAR(10)) – Gender of the patient.
+MedicalCondition (NVARCHAR(200)) – Medical condition of the patient.
+Doctor Table
+Fields:
+Id (INT, Primary Key) – Unique identifier of the doctor.
+Name (NVARCHAR(100)) – Name of the doctor.
+Specialization (NVARCHAR(100)) – Specialization of the doctor (e.g., Cardiologist, Neurologist).
+PatientId (INT, Optional) – A nullable field to assign a patient to the doctor if needed (foreign key to Patient.Id).
+2. Application Requirements
+Perform CRUD Operations for Patients and Doctors
+Implement the following operations using ADO.NET, keeping the operations simple for each table:
+Create:
+Add a new patient to the Patient table.
+Add a new doctor to the Doctor table.
+Read:
+Retrieve and display a list of all patients with their details (name, age, medical condition).
+Retrieve and display a list of all doctors with their specializations.
+Update:
+Update a patient’s details (e.g., medical condition).
+Update a doctor’s specialization.
+Delete:
+Delete a patient record from the Patient table.
+Delete a doctor record from the Doctor table.
+*/
 
 namespace PatientDoctorManagementSystem
 {

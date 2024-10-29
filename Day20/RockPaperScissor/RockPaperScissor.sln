@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35323.107
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissor", "RockPaperScissor\RockPaperScissor.csproj", "{65AE6FD2-5737-4376-A08A-39C21BFAC849}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CricketGame", "..\CricketGame\CricketGame.csproj", "{48C4C222-81ED-4314-B60B-080FC151FCAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinesweeperGame", "..\Minesweeper\MinesweeperGame.csproj", "{D34653D6-F080-4125-93C5-49A5C3AD8F9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSyntax", "..\ThreadSyntax\ThreadSyntax.csproj", "{1FF63AE7-E967-4DE7-B35A-0A48FD76F7AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpanInArray", "..\SpanInArray\SpanInArray.csproj", "{52E251C1-B83C-47B1-BACF-93BEA18B5DDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockPaperScissor1", "..\RockPaperScissor1\RockPaperScissor1.csproj", "{1277FBB5-3D83-45BB-84F9-2001374D8DD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper1.0", "..\Minesweeper1.0\Minesweeper1.0.csproj", "{4F43CFFE-D657-466A-99E1-10DACB1311B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65AE6FD2-5737-4376-A08A-39C21BFAC849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65AE6FD2-5737-4376-A08A-39C21BFAC849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65AE6FD2-5737-4376-A08A-39C21BFAC849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65AE6FD2-5737-4376-A08A-39C21BFAC849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48C4C222-81ED-4314-B60B-080FC151FCAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48C4C222-81ED-4314-B60B-080FC151FCAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48C4C222-81ED-4314-B60B-080FC151FCAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48C4C222-81ED-4314-B60B-080FC151FCAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D34653D6-F080-4125-93C5-49A5C3AD8F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D34653D6-F080-4125-93C5-49A5C3AD8F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D34653D6-F080-4125-93C5-49A5C3AD8F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D34653D6-F080-4125-93C5-49A5C3AD8F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FF63AE7-E967-4DE7-B35A-0A48FD76F7AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF63AE7-E967-4DE7-B35A-0A48FD76F7AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF63AE7-E967-4DE7-B35A-0A48FD76F7AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF63AE7-E967-4DE7-B35A-0A48FD76F7AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52E251C1-B83C-47B1-BACF-93BEA18B5DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E251C1-B83C-47B1-BACF-93BEA18B5DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E251C1-B83C-47B1-BACF-93BEA18B5DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E251C1-B83C-47B1-BACF-93BEA18B5DDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1277FBB5-3D83-45BB-84F9-2001374D8DD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1277FBB5-3D83-45BB-84F9-2001374D8DD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1277FBB5-3D83-45BB-84F9-2001374D8DD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1277FBB5-3D83-45BB-84F9-2001374D8DD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F43CFFE-D657-466A-99E1-10DACB1311B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F43CFFE-D657-466A-99E1-10DACB1311B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F43CFFE-D657-466A-99E1-10DACB1311B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F43CFFE-D657-466A-99E1-10DACB1311B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6117D53-F647-46AC-BC83-76F2C545FEC3}
+	EndGlobalSection
+EndGlobal
