@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4D3056BE-B3FF-41D2-8D3C-249147384AF7}</ProjectGuid>
+    <ProjectGuid>{2CA460F5-38C6-4A27-B56A-F53573879112}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>EchoClient</RootNamespace>
-    <AssemblyName>EchoClient</AssemblyName>
+    <RootNamespace>MissingNowithinARange</RootNamespace>
+    <AssemblyName>MissingNowithinARange</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

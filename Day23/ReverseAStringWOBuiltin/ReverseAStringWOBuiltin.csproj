@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4D3056BE-B3FF-41D2-8D3C-249147384AF7}</ProjectGuid>
+    <ProjectGuid>{E555D5A1-7B4A-4CB9-8B28-5F04E89A366A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>EchoClient</RootNamespace>
-    <AssemblyName>EchoClient</AssemblyName>
+    <RootNamespace>ReverseAStringWOBuiltin</RootNamespace>
+    <AssemblyName>ReverseAStringWOBuiltin</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

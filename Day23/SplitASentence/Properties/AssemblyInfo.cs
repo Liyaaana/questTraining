@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("EchoClient")]
+[assembly: AssemblyTitle("SplitASentence")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("EchoClient")]
+[assembly: AssemblyProduct("SplitASentence")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("4d3056be-b3ff-41d2-8d3c-249147384af7")]
+[assembly: Guid("c4d40b81-1b06-4ddd-bcfb-d79fa7d2392f")]
 
 // Version information for an assembly consists of the following four values:
 //
