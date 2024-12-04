@@ -1,0 +1,139 @@
+SOLID principles:
+SOLID principles are a set of design principles that help developers create more flexible, understandable, and maintainable software.
+Types:
+1. **Single Responsibility Principle (SRP)**:
+   - A class should have only one reason to change. In other words, it should have only one responsibility.
+   - Example:
+     // Good: Separate class for handling file I/O
+     public class FileHandler
+     {
+         public void ReadFile(string filePath) { /* Read file logic */ }
+         public void WriteFile(string filePath, string content) { /* Write file logic */ }
+     }
+
+2. **Open/Closed Principle (OCP)**:
+   - Software entities (classes, methods, etc.) should be open for extension (allowing new behavior) but closed for modification (existing behavior remains unchanged).
+   - Example:
+     // Good: Using an abstract base class or interface for extension without modification.
+     public abstract class Shape
+     {
+         public abstract double CalculateArea();
+     }
+
+     public class Circle : Shape
+     {
+         public override double CalculateArea() { /* Circle area calculation */ }
+     }
+
+3. **Liskov Substitution Principle (LSP)**:
+   - Subclasses break the expected behavior of the base class.
+Remedy:1- create separate interface for subclasses.
+2-Adhere to the contract: Ensure derived classes follow the same contract (method signatures and behavior) as the base class.
+   - Example:
+     // Good: Derived class adheres to LSP
+     public class Bird
+     {
+         public virtual void Fly() { /* Common bird flying behavior */ }
+     }
+
+     public class Penguin : Bird
+     {
+         public override void Fly() { /* Penguins can't fly */ }
+     }
+
+4. **Interface Segregation Principle (ISP)**:
+   - Clients (classes or modules) should not be forced to implement unnecessary interfaces
+   - Example:
+     // Good: Specific interfaces for specific client needs
+     public interface IReadable
+     {
+         void Read();
+     }
+
+     public interface IWritable
+     {
+         void Write();
+     }
+
+     public class File : IReadable, IWritable
+     {
+         public void Read() { /* Read file logic */ }
+         public void Write() { /* Write file logic */ }
+     }
+
+5. **Dependency Inversion Principle (DIP)**:
+   - High-level modules should not depend on low-level modules. Should depend on abstractions.
+   - Example:
+     // Good: High-level module depends on an abstraction (interfaces or abstract classes), not concrete implementations.
+     public interface ILogger
+     {
+         void Log(string message);
+     }
+
+     public class FileLogger : ILogger
+     {
+         public void Log(string message) { /* Log to file */ }
+     }
+
+     public class Application
+     {
+         private readonly ILogger logger;
+
+         public Application(ILogger logger)
+         {
+             this.logger = logger;
+         }
+
+         public void Run()
+         {
+             // Application logic
+             logger.Log("Application started.");
+         }
+     }
+
+- Example:
+// Abstraction (Interface)
+public interface ILightBulb
+{
+    void TurnOn();
+    void TurnOff();
+}
+
+// Concrete Bulb Implementation
+public class GreenBulb : ILightBulb
+{
+    public void TurnOn() => Console.WriteLine("Green bulb is now ON.");
+    public void TurnOff() => Console.WriteLine("Green bulb is now OFF.");
+}
+
+// High-Level Module
+public class LightSwitch
+{
+    private readonly ILightBulb bulb;
+
+    public LightSwitch(ILightBulb bulb)
+    {
+        this.bulb = bulb;
+    }
+
+    public void Toggle()
+    {
+        // Toggle the bulb state
+        if (/* some condition */)
+            bulb.TurnOn();
+        else
+            bulb.TurnOff();
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        var greenBulb = new GreenBulb();
+        var lightSwitch = new LightSwitch(greenBulb);
+
+        lightSwitch.Toggle(); // Turns the green bulb ON
+        lightSwitch.Toggle(); // Turns the green bulb OFF
+    }
+}

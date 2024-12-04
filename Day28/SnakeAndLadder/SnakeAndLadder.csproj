@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DCFFC87F-977C-483A-8E49-F060704210DD}</ProjectGuid>
+    <ProjectGuid>{1FD292E1-7C8B-457A-AF51-BC6999B8BB21}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CountOfUniqueWords</RootNamespace>
-    <AssemblyName>CountOfUniqueWords</AssemblyName>
+    <RootNamespace>SnakeAndLadder</RootNamespace>
+    <AssemblyName>SnakeAndLadder</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

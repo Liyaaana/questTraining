@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("UniqueWordCount")]
+[assembly: AssemblyTitle("HashOfFile")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("UniqueWordCount")]
+[assembly: AssemblyProduct("HashOfFile")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("dcffc87f-977c-483a-8e49-f060704210dd")]
+[assembly: Guid("6823a742-3ad2-4968-a77d-1abe4c44ea31")]
 
 // Version information for an assembly consists of the following four values:
 //

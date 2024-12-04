@@ -1,0 +1,220 @@
+Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects",(OOP is a template for creating objects) which can contain data in the form of fields (often called properties or attributes) and code in the form of procedures (often called methods).
+4 main principles in oops are Encapsulation, Abstraction, Inheritance, Polymorphism
+
+1.Encapsulation:- 
+Definition: Encapsulation is the process of bundling data (attributes) and methods (functions) into a single unit called a class. It hides the internal data of an object and exposes only the necessary interfaces to interact with it.
+Why?: Encapsulation provides data protection (by restricting direct access to internal data), code organization, and maintainability.
+eg:-							                                                            public class Car
+{
+    private string model; // Encapsulated field
+ 
+    public Car(string model) // Constructor
+    {
+        this.model = model;
+    }
+ 
+    public void Drive()
+    {
+        Console.WriteLine($"{model} is driving.");
+    }
+}   
+
+2.Abstraction:
+Definition: Abstraction is the process of simplifying complex systems by breaking them down into smaller parts. It involves defining interfaces (abstract classes or interfaces) that hide implementation details.
+Why?: Abstraction allows developers to focus on main features without worrying about low-level implementation.
+Example:
+public abstract class Shape
+{
+    public abstract double CalculateArea();
+}
+
+public class Circle : Shape
+{
+    public double Radius { get; set; }
+
+    public override double CalculateArea()
+    {
+        return Math.PI * Radius * Radius;
+    }
+}
+
+3.Inheritance:
+Definition: Inheritance is a mechanism where a new class (derived or child class) inherits properties and behaviors from an existing class (base or parent class). It promotes code reuse and establishes an “is-a” relationship.
+Why?: Inheritance allows you to create a hierarchy of classes, with shared functionality in the base class and specialized features in derived classes.
+Example:
+public class Animal
+{
+    public void Eat()
+    {
+        // Common eating behavior
+    }
+}
+
+public class Dog : Animal
+{
+    public void Bark()
+    {
+        // Dog-specific behavior
+    }
+}
+      
+4.Polymorphism:
+Definition: Polymorphism means “many forms.” It allows objects of different classes to be treated uniformly through a common interface (such as method overloading or method overriding).
+Why?: Polymorphism enables flexibility and extensibility in your code.
+polymorphism in real-time eg:- water
+programming eg:- interface, method overloading and overriding
+Example:
+public class Shape
+{
+    public virtual void Draw()
+    {
+        // Common drawing logic
+    }
+}
+
+public class Circle : Shape
+{
+    public override void Draw()
+    {
+        // Circle-specific drawing logic
+    }
+}                                                                                                            
+
+Constructor:
+special method used to initialize objects. It has same name as class. That is automatically called when an object of a class is created.
+types:1-Default,2-Parameterized,3-Copy,4-Static,5-Private.
+1) Default Constructor: Initializes fields with default values,Does not have any parameters
+2) Parameterized Constructor: Initializes fields with specific values passed by the user. ie, have many parameters.
+3) Copy Constructor: Creates a new object by copying the values from another object.
+4) Static Constructor: Initializes static fields and runs only once for the class. It is used to initialize static variables. It will be called only once.
+5) Private Constructor: Prevents object creation from outside the class (useful for singleton pattern).(It is used to restrict instantiation of a class from outside the class. It is typically used in singleton patterns where only one instance of a class is allowed or in utility classes where you don’t want any objects of the class to be created.)
+eg:
+namespace ConstructorExample
+{
+    class Person
+    {
+        // Fields
+        private string name;
+        private int age;
+
+        // Default constructor
+        public Person()
+        {
+            name = "Unknown";
+            age = 0;
+        }
+
+        // Parameterized constructor
+        public Person(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
+        }
+
+        // Method to display person details
+        public void DisplayDetails()
+        {
+            Console.WriteLine($"Name: {name}, Age: {age}");
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Creating objects using different constructors
+            Person person1 = new Person();
+            person1.DisplayDetails();
+
+            Person person2 = new Person("Alice", 30);
+            person2.DisplayDetails();
+        }
+    }
+}
+
+Constructor Overloading: Allows multiple constructors with different parameter types and counts.
+
+Interface:
+Key Points of an Interface:
+1.No Implementation: Interfaces only define the signature of members (methods, properties, etc.) without including the actual implementation.
+2.Multiple Inheritance: A class can implement more than one interface, allowing for multiple inheritance.
+3.Polymorphism: Interfaces allow classes to be used interchangeably, supporting polymorphism.
+4.Access Modifiers: Members of an interface are implicitly public, and you cannot use access modifiers like private, protected, etc., inside an interface.
+5.No Fields: An interface cannot contain fields (variables).
+6.Default Members in C# 8+: Since C# 8.0, interfaces can have default implementations for methods.
+
+Why Use Interfaces?
+1.Loose Coupling: Interfaces allow for loose coupling between components, making it easier to modify or replace implementations without affecting other parts of the system.
+2.Multiple Implementations: Different classes can implement the same interface in different ways, providing flexibility.
+3.Testability: Interfaces make unit testing easier by allowing dependencies to be replaced with mock implementations.
+
+Summary
+1.Interface defines a contract that classes or structs must follow.
+2.Implementation must be provided by the classes or structs that implement the interface.
+3.It promotes polymorphism, multiple inheritance, and loose coupling.
+
+Function Overloading?
+Function overloading allows you to have multiple methods with the same name but different parameter lists. The compiler determines the appropriate method to call based on the
+arguments provided.
+Real-Life Example:
+public class Shape
+{
+	public virtual double CalculateArea()
+	{
+	return 0;
+	}
+}
+public class Circle : Shape
+{
+	public double Radius { get; set; }
+	public override double CalculateArea()
+	{
+		return Math.PI * Radius * Radius;
+	}
+}
+public class Rectangle : Shape
+{
+	public double Width { get; set; }
+	public double Height { get; set; }
+	public override double CalculateArea()
+	{
+		return Width * Height;
+	}
+}
+In this example, the Shape class defines a virtual CalculateArea method. The Circle and Rectangle classes override this method to provide their specific area calculations.
+
+In C#, the virtual and override keywords are used to implement polymorphism, which allows derived classes to modify or extend the behavior of base class methods. These keywords are key elements in runtime method overriding, enabling flexibility and customization in object-oriented programming.
+ 
+virtual Keyword
+The virtual keyword is used to indicate that a method, property, or event can be overridden by any derived class. A method marked as virtual in the base class provides a default implementation, but derived classes can change this behavior by overriding it.
+Key Points:
+The virtual method provides a base-level implementation.
+Derived classes can override the virtual method using the override keyword.
+If a method is not marked virtual, it cannot be overridden in derived classes.
+ 
+override Keyword
+The override keyword is used in a derived class to override a base class method (or property, event) that is marked as virtual or abstract. This allows the derived class to change the behavior of the inherited virtual or abstract method.
+Key Points:
+The override keyword is used in a derived class to provide a new implementation for an inherited virtual or abstract method.
+The base class method and the overriding method in the derived class must have the same signature (return type and parameters).
+The overriding method replaces the base class method.
+ 
+Important Points
+Polymorphism: The combination of virtual and override allows for polymorphic behavior. This means that the method to be called is determined at runtime, depending on the type of the object.
+Accessing the Base Class Implementation: Inside an overriding method, you can call the base class version of the method using base.MethodName() if needed.
+Non-Virtual Methods: If a method is not marked as virtual, it cannot be overridden in derived classes.
+Summary
+virtual keyword allows a method to be overridden in derived classes.
+override keyword is used in the derived class to provide a new implementation of a virtual method.
+Together, they enable runtime polymorphism, allowing different classes to implement the same method in different ways.
+
+Abstract class:-
+Key Features:
+Cannot be instantiated: You cannot create an instance of an abstract class directly.
+Abstract members: It can have abstract methods or properties, which must be implemented in derived classes.
+Concrete members: An abstract class can also have concrete methods (methods with a body).
+Inherits behavior: Derived classes can inherit common methods and implement specific functionality.
+When to Use:
+Use abstract classes when you want to share code among several closely related classes.
+When you want to define a base class that should not be instantiated directly, but only via subclasses.
+If some methods should have default implementation, while others should be enforced for the subclasses to implement. 

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35323.107
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix", "Matrix\Matrix.csproj", "{326B4C03-6EF0-4B25-A185-246FE6146953}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatricTranspose", "..\MatricTranspose\MatricTranspose.csproj", "{9CD0C8F3-377B-4152-8AF6-AA5C7870F8B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeAndLadder", "..\SnakeAndLadder\SnakeAndLadder.csproj", "{1FD292E1-7C8B-457A-AF51-BC6999B8BB21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixMultiplication", "..\MatrixMultiplication\MatrixMultiplication.csproj", "{8A150C39-81B0-4792-BCD2-27E02E0AA52F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointmentSystem", "..\DoctorAppointmentSystem\DoctorAppointmentSystem.csproj", "{3B42A59D-1998-4445-807B-42E1C211D042}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{326B4C03-6EF0-4B25-A185-246FE6146953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{326B4C03-6EF0-4B25-A185-246FE6146953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{326B4C03-6EF0-4B25-A185-246FE6146953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{326B4C03-6EF0-4B25-A185-246FE6146953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CD0C8F3-377B-4152-8AF6-AA5C7870F8B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CD0C8F3-377B-4152-8AF6-AA5C7870F8B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CD0C8F3-377B-4152-8AF6-AA5C7870F8B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CD0C8F3-377B-4152-8AF6-AA5C7870F8B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FD292E1-7C8B-457A-AF51-BC6999B8BB21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FD292E1-7C8B-457A-AF51-BC6999B8BB21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FD292E1-7C8B-457A-AF51-BC6999B8BB21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FD292E1-7C8B-457A-AF51-BC6999B8BB21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A150C39-81B0-4792-BCD2-27E02E0AA52F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A150C39-81B0-4792-BCD2-27E02E0AA52F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A150C39-81B0-4792-BCD2-27E02E0AA52F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A150C39-81B0-4792-BCD2-27E02E0AA52F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B42A59D-1998-4445-807B-42E1C211D042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B42A59D-1998-4445-807B-42E1C211D042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B42A59D-1998-4445-807B-42E1C211D042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B42A59D-1998-4445-807B-42E1C211D042}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6BF3C9E8-021C-49A8-AAC2-C52D79DCA38C}
+	EndGlobalSection
+EndGlobal

@@ -10,32 +10,33 @@ namespace PrimeOrNot
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter a number: ");
-            int number = int.Parse(Console.ReadLine());
-            bool isPrime = true;
-            if (number <= 1)
+            Console.WriteLine("Enter a number:");
+            int num = int.Parse(Console.ReadLine());
+
+            if (num <= 1)
             {
-                isPrime = false;
+                Console.WriteLine("Not  prime.");
+                return;
             }
-            else
+
+            bool isPrime = true;
+
+            for (int i = 2; i < num / 2; i++)
             {
-                for (int i = 2; i <= number; i++)
+                if (num % i == 0)
                 {
-                    if (number % i == 0)
-                    {
-                        isPrime = false;
-                        break;
-                    }
+                    isPrime = false;
+                    break;
                 }
-            }   
+            }
 
             if (isPrime)
             {
-                Console.WriteLine($"{number} is a prime number.");
+                Console.WriteLine("Prime.");
             }
             else
             {
-                Console.WriteLine($"{number} is not a prime number.");
+                Console.WriteLine("Not prime.");
             }
         }
     }

@@ -80,5 +80,10 @@ namespace Note_Taking_Console_Application.Models
         public string Content { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
+        public Note(string title, string content)
+        {
+            Title = title;
+            Content = content;
+        }
     }
 }
