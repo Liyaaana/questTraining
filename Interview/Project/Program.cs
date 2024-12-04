@@ -8,8 +8,6 @@ namespace Project
 {
     internal class Program
     {
-        
-
         public static void Display()
         {
             List<int> arr2 = new List<int>();          
